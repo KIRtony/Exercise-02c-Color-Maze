@@ -28,3 +28,6 @@ func shoot(color):
 			b.apply_central_impulse(Vector2(0,-100).rotated(rotation))
 			ready_to_shoot = false
 			$Reload.start()
+
+func _on_reload_timeout():
+	ready_to_shoot = true

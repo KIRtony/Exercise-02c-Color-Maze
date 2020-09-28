@@ -17,5 +17,4 @@ func _ready():
 				add_child(o)
 
 
-func _on_Reload_timeout():
-	ready_to_shoot = true
+
